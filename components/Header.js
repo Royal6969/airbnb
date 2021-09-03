@@ -132,4 +132,4 @@ function Header({ placeholder }) {
     );
 }
 
-export default Header
+export default Header;
