@@ -1,9 +1,11 @@
 import { useRouter } from "next/dist/client/router";
-import Image from "next/image";
+//import Image from "next/image";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import { format } from 'date-fns';
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
+//import "mapbox-gl/dist/mapbox-gl.css"; 
 
 function search({ searchResults }) {
 
@@ -61,7 +63,10 @@ function search({ searchResults }) {
               )
             )}
           </div>
-          
+        </section>
+
+        <section className="hidden xl:inline-flex xl:min-w-[600px]">
+          <Map searchResults={searchResults} />
         </section>
       </main>
 
